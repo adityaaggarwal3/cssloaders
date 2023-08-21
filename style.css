@@ -422,3 +422,66 @@
     }
    
 }
+
+/* loader 9 */
+.loader9{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px red, 0 0 30px blue;
+    background-color: #fff;
+    border: 20px solid transparent;
+    border-top-color: black;
+    border-bottom-color: black;
+    animation: loader9 1s infinite linear;
+}
+
+.loader9::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
+    background-color: pink;
+    border-radius: 50%;
+    animation: loader9center 5s infinite;
+}
+
+.loader9::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: calc(50% - 80px);
+    left: calc(50% - 80px);
+    border-radius: 50%;
+    border: 20px solid wheat;
+}
+
+@keyframes loader9 {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader9center {
+    0%, 100%{
+        background-color: red;
+    }
+    20%{
+        background-color: tomato;
+    }
+    40%{
+        background-color: violet;
+    }
+    60%{
+        background-color: yellowgreen;
+    }
+    80%{
+        background-color: rgb(6, 241, 104);
+    }
+}

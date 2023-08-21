@@ -241,3 +241,28 @@
     }
 }
 
+/* Loader 5 */
+.loader5{
+    width: 250px;
+    height: 250px;  
+    border: 10px solid yellow;
+    border-radius: 50%;
+    position: relative;
+}
+.arm{
+    position: absolute;
+    width: 5px;
+    height: 100px;
+    bottom: 50%;
+    right: 50%;
+    background-color: aliceblue;
+    transform-origin: bottom;
+    animation: loader5 2s infinite;
+}
+
+@keyframes loader5{
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}

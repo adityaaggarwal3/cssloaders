@@ -263,6 +263,52 @@
 @keyframes loader5{
     100%{
         transform: rotate(360deg);
-    }
-    
+    }    
 }
+
+/* Loader 6 */
+.loader6{
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 8px rgba(26,6,181,1),0 0 0 2px black;
+    animation: loader6 2s infinite alternate;
+    /* display: none; */
+}
+.loader6 span:nth-child(1){
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    bottom: 15px;
+    right: 15px;
+    border: 1px solid white;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 8px rgba(26,6,181,1),0 0 0 2px black;
+    animation: loader6 2s 0.25s infinite;
+}
+.loader6 span:nth-child(2){
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    bottom: 30px;
+    right: 30px;
+    border: 1px solid white;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 8px rgba(26,6,181,1),0 0 0 2px black;
+    transform: rotate(45deg);
+    animation: loader6 2s 0.5s infinite alternate-reverse;
+}
+
+@keyframes loader6{
+    100%{
+        transform: rotate(350deg);
+    }
+}
+
